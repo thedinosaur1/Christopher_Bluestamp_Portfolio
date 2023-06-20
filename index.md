@@ -5,7 +5,7 @@ Replace this text with a brief description (2-3 sentences) of your project. This
 |:--:|:--:|:--:|:--:|
 | Christopher Y.| Lynbrook High | Mechanical Engineering | Incoming Freshman
 
-<img src="Christopher-Headshot.png"  width="600" height="300">
+<img src="Christopher-Headshot.png"  width="300" height="300">
 <!-- ![Headstone Image](Christopher-Headshot.png) -->
 
   # Starter project - Simon Says
