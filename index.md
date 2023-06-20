@@ -5,10 +5,18 @@ Replace this text with a brief description (2-3 sentences) of your project. This
 |:--:|:--:|:--:|:--:|
 | Christopher Y.| Lynbrook High | Mechanical Engineering | Incoming Freshman
 
-**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 
 ![Headstone Image](Christopher-Headshot.png)
+
+  # Starter project - Simon Says
+  I chose this project because it's not too hard and helps me learn some basics about engineering. In order to play: you turn flip the power switch on the board, if you want to you can also turn on the sound switc,h the lights will flash in an order, it starts with one flash, then you need to hit that button, then the same button flashes and another button flashes, then you need to hit the buttons in the specific order or else you lose. They game never ends until you hit the wrong button. There are two batteries powering the simon board, inside the four buttons, there are four LED lights And behind that, there's a microcontroller which basically registers which buttons I press and if I should continue or restart, inside my simon board there is also a resistor which limits the flow of electrical current thats flowing through, there is also a buzzer that makes a loud noise when I loose And lastly there is a decoupling cap which filters out the voltage spikes in my simon board. When I finished with everything, one of the lights on my simon board didn't flash, I first tried using a multimeter to see if I put my LED on wrong but I didn’t, Later I found out that the problem was that the solder I put on didn't connect the LED light properly. In summary, I learned how to solder pieces onto a board. How to use a multimeter to test if my LED lights are put on correctly. I learned some basics of the parts on my simon board like the decoupling cap, resistor, and my microcontroller
+
+
   
+**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 # Final Milestone
 For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
