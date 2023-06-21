@@ -8,7 +8,7 @@ Replace this text with a brief description (2-3 sentences) of your project. This
 <img src="Christopher-Headshot.png"  width="225" height="300">
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
-<iframe width="560" height="315" src="[https://www.youtube.com/embed/F7M7imOVGug](https://www.youtube.com/watch?v=cEyCkOh2ClY&list=PLe-u_DjFx7evbB-xhja9iGMLTbCZXLQRI&index=91)" title="YouTube video - Simon Says" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="[[https://www.youtube.com/embed/F7M7imOVGug](https://www.youtube.com/watch?v=cEyCkOh2ClY&list=PLe-u_DjFx7evbB-xhja9iGMLTbCZXLQRI&index=91](https://youtu.be/cEyCkOh2ClY))" title="YouTube video - Simon Says" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # Final Milestone
 For your final milestone, explain the outcome of your project. Key details to include are:
