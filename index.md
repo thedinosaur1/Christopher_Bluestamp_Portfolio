@@ -7,7 +7,6 @@ Replace this text with a brief description (2-3 sentences) of your project. This
 
 <img src="Christopher-Headshot.png"  width="225" height="300">
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cEyCkOh2ClY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # Final Milestone
 For your final milestone, explain the outcome of your project. Key details to include are:
@@ -47,7 +46,9 @@ For your first milestone, describe what your project is and how you plan to buil
 
   # Starter project - Simon Says
   I chose this project because it's not too hard and helps me learn some basics about engineering. In order to play: you turn flip the power switch on the board, if you want to you can also turn on the sound switc,h the lights will flash in an order, it starts with one flash, then you need to hit that button, then the same button flashes and another button flashes, then you need to hit the buttons in the specific order or else you lose. They game never ends until you hit the wrong button. 
-  
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/cEyCkOh2ClY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
   Materials:
 - two batteries powering the simon board
 - inside the four buttons, there are four LED lights
