@@ -33,7 +33,7 @@ For your second milestone, explain what you've worked on since your previous mil
 # First Milestone - Lie Detector
 I chose this project because I took a forensic science class before so I want to know how it works and its really cool. 
 
-#### What the parts do
+#### What the parts do: 
 - The arduino is a board that has code from a computer and physical bits that you can connect wires to
 - The breadboard connects columns together and connects rows together
 - There are resistor four resistors, three of them are 2.2k and one of them is 10k
@@ -42,18 +42,18 @@ I chose this project because I took a forensic science class before so I want to
 - LED lights works by having electricity flow through a microchip which illuminates a light
 - The wires just connect everything together 
 
-#### Technical Progress So Far
+#### Technical Progress So Far: 
 - I have velcros that I can put my fingers around, when I do, some lights light up
 - When I have sweaty fingers, all the lights light up
 - When I have not sweaty fingers, only the green LED lights up or sometimes none of the LEDS light up
 
-#### Challenges I Faced
+#### Challenges I Faced: 
 - When I was done with my wiring, I tested my LED’s and only my green one turned on
 - I tried using different wires, testing my resistors, testing if my other LEDs  were broken, I checked the docs, and I checked if I wired everything correctly
 - Turns out my breadboard wasn’t working after I tested if different places on my breadboard connected to eachother
 - At last, I realized only half my breadboard 
 
-#### My Plan To Complete My Lie Detector
+#### My Plans To Complete My Lie Detector: 
 - I plan on adding a heart rate detector
 - I'm probally going to solder my wires on soon
 - I might add a case to my breadboard
@@ -75,13 +75,10 @@ I chose this project because I took a forensic science class before so I want to
 - There is also a buzzer that makes a loud noise when I loose
 - Lastly there is a decoupling cap which filters out the voltage spikes in my simon board
 
-#### Problems I Faced
+#### Problems I Faced: 
 When I finished with everything, one of the lights on my simon board didn't flash, I first tried using a multimeter to see if I put my LED on wrong but I didn’t, Later I found out that the problem was that the solder I put on didn't connect the LED light properly. 
 
-#### What I learned
-In summary, I learned how to solder pieces onto a board. How to use a multimeter to test if my LED lights are put on correctly. I learned some basics of the parts on my simon board like the decoupling cap, resistor, and my microcontroller. I am going to work on a lie detector next. 
-
-#### Whats Next 
+#### Whats Next: 
 I am planning on making a lie detector. 
 
  <iframe width="560" height="315" src="https://www.youtube.com/embed/cEyCkOh2ClY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
