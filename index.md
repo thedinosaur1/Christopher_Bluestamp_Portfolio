@@ -31,17 +31,37 @@ For your second milestone, explain what you've worked on since your previous mil
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
 
 # First Milestone - Lie Detector
-For your first milestone, describe what your project is and how you plan to build it. You can include:
-- An explanation about the different components of your project and how they will all integrate together
-- Technical progress you've made so far
-- Challenges you're facing and solving in your future milestones
-- What your plan is to complete your project
+I chose this project because I took a forensic science class before so I want to know how it works and its really cool. 
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+#### What the parts do
+- The arduino is a board that has code from a computer and physical bits that you can connect wires to
+- The breadboard connects columns together and connects rows together
+- There are resistor four resistors, three of them are 2.2k and one of them is 10k
+- Resistors limits the amount of electricity that travels through
+- The LED's light up when coded to through a device
+- LED lights works by having electricity flow through a microchip which illuminates a light
+- The wires just connect everything together 
 
+#### Technical Progress So Far
+- I have velcros that I can put my fingers around, when I do, some lights light up
+- When I have sweaty fingers, all the lights light up
+- When I have not sweaty fingers, only the green LED lights up or sometimes none of the LEDS light up
+
+#### Challenges I Faced
+- When I was done with my wiring, I tested my LED’s and only my green one turned on
+- I tried using different wires, testing my resistors, testing if my other LEDs  were broken, I checked the docs, and I checked if I wired everything correctly
+- Turns out my breadboard wasn’t working after I tested if different places on my breadboard connected to eachother
+- At last, I realized only half my breadboard 
+
+#### My Plan To Complete My Lie Detector
+- I plan on adding a heart rate detector
+- I'm probally going to solder my wires on soon
+- I might add a case to my breadboard
+- 
+<!--
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-## Starter Project - Simon Says
+-->
+# Starter Project - Simon Says
   I chose this project because it's not too hard and helps me learn some basics about engineering. 
   
 #### How To Play: 
