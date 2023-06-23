@@ -56,8 +56,7 @@ I chose this project because I took a forensic science class before so I want to
 #### My Plans To Complete My Lie Detector: 
 - I plan on adding a heart rate detector
 - I'm probally going to solder my wires on soon
-- I might add a case to my breadboard
-- 
+- I might add a case to my breadboard 
 <!--
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 -->
