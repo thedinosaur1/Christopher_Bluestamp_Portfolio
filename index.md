@@ -41,13 +41,13 @@ For your first milestone, describe what your project is and how you plan to buil
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
 
-#### Starter Project - Simon Says
+## Starter Project - Simon Says
   I chose this project because it's not too hard and helps me learn some basics about engineering. 
   
-## How To Play: 
+#### How To Play: 
   First, you flip the power switch on the board, if you want to, you can also turn on the sound switch. After you press the power switch, the lights will flash in an order, it starts with one flash, then you need to hit that button, then the same button flashes and another button flashes, then you need to hit the buttons in the specific order or else you lose. They game never ends until you hit the wrong button. 
   
-## Materials & What They Do:
+#### Materials & What They Do:
 - Two batteries powering the simon board
 - Inside the four buttons, there are four LED lights
 - Behind the LED's, there's a microcontroller which basically registers which buttons I press and if I should continue or restart
@@ -55,13 +55,13 @@ For your first milestone, describe what your project is and how you plan to buil
 - There is also a buzzer that makes a loud noise when I loose
 - Lastly there is a decoupling cap which filters out the voltage spikes in my simon board
 
-## Problems I Faced
+#### Problems I Faced
 When I finished with everything, one of the lights on my simon board didn't flash, I first tried using a multimeter to see if I put my LED on wrong but I didn’t, Later I found out that the problem was that the solder I put on didn't connect the LED light properly. 
 
-## What I learned
+#### What I learned
 In summary, I learned how to solder pieces onto a board. How to use a multimeter to test if my LED lights are put on correctly. I learned some basics of the parts on my simon board like the decoupling cap, resistor, and my microcontroller. I am going to work on a lie detector next. 
 
-## Whats Next :>
+#### Whats Next :>
 I am planning on making a lie detector
 
  <iframe width="560" height="315" src="https://www.youtube.com/embed/cEyCkOh2ClY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
