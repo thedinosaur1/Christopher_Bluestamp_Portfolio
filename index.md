@@ -61,10 +61,10 @@ The Lie Detector is a arduino based project that can tell if you are telling the
 #### My Plans To Complete My Lie Detector: 
 - I plan on adding a heart rate detector
 - I'm probally going to solder my wires on soon
-- I might add a case to my breadboard 
-<!--
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
--->
+- I might add a case to my breadboard
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/StfrcpoQP14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 # Starter Project - Simon Says
 The Simon Says project is a memory game. 
   
