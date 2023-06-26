@@ -42,7 +42,7 @@ The Lie Detector is a arduino based project that can tell if you are telling the
 - LED lights works by having electricity flow through a microchip which illuminates a light
 - The wires just connect everything together
 
-####How Do The Parts Act Together: 
+#### How Do The Parts Act Together: 
 - The arduino is a board that gives instructions to all the other parts in the system using the code I put into the app
 - The wires connect the parts of the arduino to other places like the resistors or the columns
 - The resistors limmit the elctricity into the LED lights, so they don't die
@@ -79,7 +79,7 @@ The Simon Says project is a memory game.
 - There is also a buzzer that makes a loud noise when I loose
 - Lastly there is a decoupling cap which filters out the voltage spikes in my simon board
 
-####How Do The Components Work Together: 
+#### How Do The Components Work Together: 
 - When I press buttons, the microcontroller registers them
 - The microcontroller of the board gives the LEDs instruction, and give the buzzer instructions
 - The batteries give electricity into the decoupling caps
