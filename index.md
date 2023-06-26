@@ -31,16 +31,21 @@ For your second milestone, explain what you've worked on since your previous mil
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
 
 # First Milestone - Lie Detector
-I chose this project because I took a forensic science class before so I want to know how it works and its really cool. 
+The Lie Detector is a arduino based project that can tell if you are telling the truth or lying. 
 
-#### What the parts do: 
+#### What The Parts Do: 
 - The arduino is a board that has code from a computer and physical bits that you can connect wires to
 - The breadboard connects columns together and connects rows together
 - There are resistor four resistors, three of them are 2.2k and one of them is 10k
 - Resistors limits the amount of electricity that travels through
 - The LED's light up when coded to through a device
 - LED lights works by having electricity flow through a microchip which illuminates a light
-- The wires just connect everything together 
+- The wires just connect everything together
+
+####How Do The Parts Act Together: 
+- The arduino is a board that gives instructions to all the other parts in the system using the code I put into the app
+- The wires connect the parts of the arduino to other places like the resistors or the columns
+- The resistors limmit the elctricity into the LED lights, so they don't die
 
 #### Technical Progress So Far: 
 - I have velcros that I can put my fingers around, when I do, some lights light up
@@ -61,7 +66,7 @@ I chose this project because I took a forensic science class before so I want to
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 -->
 # Starter Project - Simon Says
-  I chose this project because it's not too hard and helps me learn some basics about engineering. 
+The Simon Says project is a memory game. 
   
 #### How To Play: 
   First, you flip the power switch on the board, if you want to, you can also turn on the sound switch. After you press the power switch, the lights will flash in an order, it starts with one flash, then you need to hit that button, then the same button flashes and another button flashes, then you need to hit the buttons in the specific order or else you lose. They game never ends until you hit the wrong button. 
@@ -73,6 +78,14 @@ I chose this project because I took a forensic science class before so I want to
 - Inside my simon board there is also a resistor which limits the flow of electrical current thats flowing through
 - There is also a buzzer that makes a loud noise when I loose
 - Lastly there is a decoupling cap which filters out the voltage spikes in my simon board
+
+####How Do The Components Work Together: 
+- When I press buttons, the microcontroller registers them
+- The microcontroller of the board gives the LEDs instruction, and give the buzzer instructions
+- The batteries give electricity into the decoupling caps
+- The decoupling caps remove all the voltage spikes
+- The decoupling caps move the electricity into the resistors
+- The resistors limmit the electricity and transports it to the microcontroller, the buzzer, and the LEDs
 
 #### Problems I Faced: 
 When I finished with everything, one of the lights on my simon board didn't flash, I first tried using a multimeter to see if I put my LED on wrong but I didn’t, Later I found out that the problem was that the solder I put on didn't connect the LED light properly. 
