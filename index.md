@@ -31,64 +31,36 @@ For your second milestone, explain what you've worked on since your previous mil
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
 
 # First Milestone - Lie Detector
-The Lie Detector is a arduino based project that can tell if you are telling the truth or lying. 
+The Lie Detector is an arduino based project that can tell if you are telling the truth or lying. 
 
 #### What The Parts Do: 
-- The arduino is a board that has code from a computer and physical bits that you can connect wires to
-- The breadboard connects columns together and connects rows together
-- There are resistor four resistors, three of them are 2.2k and one of them is 10k
-- Resistors limits the amount of electricity that travels through
-- The LED's light up when coded to through a device
-- LED lights works by having electricity flow through a microchip which illuminates a light
-- The wires just connect everything together
+The arduino is a board that has code from a computer and physical bits that you can connect wires to. The breadboard connects columns together and connects rows together. There are four resistors, three of them are 2.2k and one of them is 10k, resistors limit the amount of electricity that travels through. The LED's light up when coded to through a device, LED lights work by having electricity flow through a microchip which illuminates a light. The wires just connect everything together. 
 
 #### How Do The Parts Act Together: 
-- The arduino is a board that gives instructions to all the other parts in the system using the code I put into the app
-- The wires connect the parts of the arduino to other places like the resistors or the columns
-- The resistors limmit the elctricity into the LED lights, so they don't die
+The arduino is a board that gives instructions to all the other parts in the system using the code I put into the app. The wires connect the parts of the arduino to other places like the resistors or the columns. The resistors limit the electricity into the LED lights, so they don't die. And the breadboard connects the rows and columns together. 
 
 #### Technical Progress So Far: 
-- I have velcros that I can put my fingers around, when I do, some lights light up
-- When I have sweaty fingers, all the lights light up
-- When I have not sweaty fingers, only the green LED lights up or sometimes none of the LEDS light up
+I have velcros that I can put my fingers around, when I do, some lights light up. When I have sweaty fingers, all the lights light up. When I don’t have sweaty fingers, only the green LED lights up or sometimes none of the LEDS light up
 
 #### Challenges I Faced: 
-- When I was done with my wiring, I tested my LED’s and only my green one turned on
-- I tried using different wires, testing my resistors, testing if my other LEDs  were broken, I checked the docs, and I checked if I wired everything correctly
-- Turns out my breadboard wasn’t working after I tested if different places on my breadboard connected to eachother
-- At last, I realized only half my breadboard 
+When I was done with my wiring, I tested my LED’s and only my green one turned on. I tried using different wires, testing my resistors, testing if my other LEDs  were broken, I checked the docs, and I checked if I wired everything correctly. Turns out my breadboard wasn’t working after I tested if different places on my breadboard connected to each other. At last, I realized only half my breadboard. So I got a new breadboard that worked. 
 
 #### My Plans To Complete My Lie Detector: 
-- I plan on adding a heart rate detector
-- I'm probally going to solder my wires on soon
-- I might add a case to my breadboard
+I plan on adding a heart rate detector, I'm probably going to solder my wires on soon. I might add a case to my breadboard. Also I might add an algorithm that changes depending on different peoples galvanic skin response and heart rate. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/StfrcpoQP14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # Starter Project - Simon Says
 The Simon Says project is a memory game. 
   
-#### How To Play: 
-  First, you flip the power switch on the board, if you want to, you can also turn on the sound switch. After you press the power switch, the lights will flash in an order, it starts with one flash, then you need to hit that button, then the same button flashes and another button flashes, then you need to hit the buttons in the specific order or else you lose. They game never ends until you hit the wrong button. 
-  
 #### Materials & What They Do:
-- Two batteries powering the simon board
-- Inside the four buttons, there are four LED lights
-- Behind the LED's, there's a microcontroller which basically registers which buttons I press and if I should continue or restart
-- Inside my simon board there is also a resistor which limits the flow of electrical current thats flowing through
-- There is also a buzzer that makes a loud noise when I loose
-- Lastly there is a decoupling cap which filters out the voltage spikes in my simon board
+There are two batteries powering the simon board, inside the four buttons, there are four LED lights that light up when told to through code. Behind the LED's, there's a microcontroller which basically registers which buttons I press and if I should continue or restart. Inside my simon board there is also a resistor which limits the flow of electrical current that's flowing through, there is also a buzzer that makes a loud noise when I loose. Lastly there is a decoupling cap which filters out the voltage spikes in my simon board. 
 
 #### How Do The Components Work Together: 
-- When I press buttons, the microcontroller registers them
-- The microcontroller of the board gives the LEDs instruction, and give the buzzer instructions
-- The batteries give electricity into the decoupling caps
-- The decoupling caps remove all the voltage spikes
-- The decoupling caps move the electricity into the resistors
-- The resistors limmit the electricity and transports it to the microcontroller, the buzzer, and the LEDs
+When I press buttons, the microcontroller registers them, giving the LEDs instructions, and gives the buzzer instructions, for example if I lost, then the buzzer will buzz and the LEDs will stop lighting up. The batteries give electricity into the decoupling caps, the decoupling caps remove all the voltage spikes that are getting put through the system, then the decoupling caps move the electricity into the resistors. The resistors limit the electricity and transports it to the microcontroller, the buzzer, and the LEDs. 
 
 #### Problems I Faced: 
-When I finished with everything, one of the lights on my simon board didn't flash, I first tried using a multimeter to see if I put my LED on wrong but I didn’t, Later I found out that the problem was that the solder I put on didn't connect the LED light properly. 
+When I finished everything, one of the lights on my simon board didn't flash. I first tried using a multimeter to see if I put my LED on wrong but I didn’t. Later I found out that the problem was that the solder I put on didn't connect the LED light properly. 
 
 #### Whats Next: 
 I am planning on making a lie detector. 
@@ -97,7 +69,7 @@ I am planning on making a lie detector.
 
 <!--
 # Schematics 
-Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
+Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resources to create professional schematic diagrams, though BSE recommends Tinkercad because it can be done easily and for free in the browser. 
 
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
@@ -136,3 +108,6 @@ One of the best parts about Github is that you can view how other people set up 
 
 To watch the BSE tutorial on how to create a portfolio, click here.
 -->
+
+
+
