@@ -1,5 +1,5 @@
 # Lie detector
-<!--Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!-->
+Have you ever wanted to find out if your sibilings are lying about eating all the snacks in the house? Then wonder no further! With this new technology, you can find out if the cookie monster ate all the snacks in the house or your sibilings did! By measuring galvanic skin response and heart rate, we can find out if someone is lying to you. (most of the time)
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
