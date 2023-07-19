@@ -10,9 +10,18 @@ Have you ever wanted to find out if your sibiling(s) are lying about eating all 
 
 <!--# Final Milestone
 For your final milestone, explain the outcome of your project. Key details to include are:
-- What you've accomplished since your previous milestone
-- What your biggest challenges and triumphs were at BSE
-- A summary of key topics you learned about
+#### What I've Accomplished Since My Previous Milestone
+I added a algorithm to find my average heart beat and galvanic skin response. I also added a 3d printed box to hold lie detector in. 
+
+#### My Biggest Challenges I've Faced
+One of my biggest challenges I faced was when I finnished with my lie detector, half my breadboard didn't work, but my arduino was on the half that did work, so I didn't know half my breadboard didn't work. When I tested it, only one of my LEDs turned on. I tested my LED, my resistor, my wires, my arduino, and I finally testd my breadboard. And I eventually found out and got a new breadboard. 
+
+#### My Biggest Triumphs At BSE
+I feel like my biggest triumph at BSE was coding my algorithm. When I first started making my algorithm, I had no idea what to do and how to find my average heart rate and average galvanic skin response. I eventually asked for help and got two codes, one for my algorithm and one for my default code. From then on, I combined both of the codes together and I had my final code. I still had to spend some days changing some things because some things didn't work but I finnished it in the end. 
+
+#### key topics you learned about
+I learned a lot about engineering. I learned how to code with arduino, I learned how to do the basics of 3d printing, I learned the basics of Ohm's law, and I learned how to solder. 
+
 - What you hope to learn in the future after everything you've learned at BSE
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
