@@ -78,7 +78,45 @@ Link: https://cad.onshape.com/documents/3ba0a5e8628ea6f2311e0273/w/f3892129fdbb3
 # Code
 
 ```c++
+/*
+   Sketch to handle each sample read from a PulseSensor.
+   Typically used when you don't want to use interrupts
+   to read PulseSensor voltages.
 
+   Here is a link to the tutorial that discusses this code
+   https://pulsesensor.com/pages/getting-advanced
+
+   Copyright World Famous Electronics LLC - see LICENSE
+   Contributors:
+     Joel Murphy, https://pulsesensor.com
+     Yury Gitman, https://pulsesensor.com
+     Bradford Needham, @bneedhamia, https://bluepapertech.com
+
+   Licensed under the MIT License, a copy of which
+   should have been included with this software.
+
+   This software is not intended for medical use.
+*/
+
+/*
+   Every Sketch that uses the PulseSensor Playground must
+   define USE_ARDUINO_INTERRUPTS before including PulseSensorPlayground.h.
+   Here, #define USE_ARDUINO_INTERRUPTS false tells the library to
+   not use interrupts to read data from the PulseSensor.
+
+   If you want to use interrupts, simply change the line below
+   to read:
+     #define USE_ARDUINO_INTERRUPTS true
+
+   Set US_PS_INTERRUPTS to false if either
+   1) Your Arduino platform's interrupts aren't yet supported
+   by PulseSensor Playground, or
+   2) You don't wish to use interrupts because of the side effects.
+
+   NOTE: if US_PS_INTERRUPTS is false, your Sketch must
+   call pulse.sawNewSample() at least once every 2 milliseconds
+   to accurately read the PulseSensor signal.
+*/
 #define USE_ARDUINO_INTERRUPTS false
 #include <PulseSensorPlayground.h>
 #include <SPI.h>
@@ -89,7 +127,7 @@ Link: https://cad.onshape.com/documents/3ba0a5e8628ea6f2311e0273/w/f3892129fdbb3
 Adafruit_SSD1306 srituhobby = Adafruit_SSD1306(128, 64, &Wire);
 
 #define sensor A1
-#define Highpulse 550
+#define Highpulse 35
 /*
    The format of our output.
 
@@ -138,8 +176,17 @@ int greenLED = 2;
 const int PULSE_INPUT = A1;
 const int PULSE_BLINK = LED_BUILTIN;
 const int PULSE_FADE = 5;
-const int THRESHOLD = 550;   // Adjust this number to avoid noise when idle
+const int THRESHOLD = 300;   // Adjust this number to avoid noise when idle
 
+int counter = 0;
+int counter2 = 1;
+int counter3 = 0;
+unsigned int allbpm = 0;
+unsigned int allgsr = 0;
+int averageBPM = 0;
+int averageGSR = 0;
+int myBPM1;
+int myBPM;
 /*
    samplesUntilReport = the number of samples remaining to read
    until we want to report a sample over the serial connection.
@@ -149,7 +196,7 @@ const int THRESHOLD = 550;   // Adjust this number to avoid noise when idle
    doing Serial output faster than the Arduino can send.
 */
 byte samplesUntilReport;
-const byte SAMPLES_PER_SERIAL_SAMPLE = 10;
+const byte SAMPLES_PER_SERIAL_SAMPLE = 5;
 
 /*
    All the PulseSensor Playground functions.
@@ -167,7 +214,6 @@ void setup() {
      not work properly.
   */
   Serial.begin(9600);
-
   //initializes my lcd 
   srituhobby.begin(SSD1306_SWITCHCAPVCC, 0x3C);// Address 0x3C for 128x32
   delay(1000);
@@ -197,6 +243,7 @@ void setup() {
 
   // Skip the first SAMPLES_PER_SERIAL_SAMPLE in the loop().
   samplesUntilReport = SAMPLES_PER_SERIAL_SAMPLE;
+  counter = 0;
 
   // Now that everything is ready, start reading the PulseSensor signal.
   if (!pulseSensor.begin()) {
@@ -218,49 +265,16 @@ void setup() {
 }
 
 void loop() {
-  if (pulseSensor.sawNewSample()) {
-    /*
-       Every so often, send the latest Sample.
-       We don't print every sample, because our baud rate
-       won't support that much I/O.
-    */
-    if (--samplesUntilReport == (byte) 0) {
-      samplesUntilReport = SAMPLES_PER_SERIAL_SAMPLE;
-      
-        int myBPM = pulseSensor.getBeatsPerMinute();
-        Serial.print("BPM: ");                        // Print phrase "BPM: " 
-        Serial.println(myBPM); 
-
-        int gsr = analogRead(A0);
-        Serial.println(gsr);
-        if (gsr > 80 && myBPM > 90) 
-        {
-          digitalWrite(greenLED, LOW);
-          digitalWrite(blueLED, LOW);
-          digitalWrite(redLED, HIGH);
-        }
-        else if (gsr > 60 && myBPM > 70)
-        {
-          digitalWrite(greenLED, LOW);
-          digitalWrite(redLED, LOW);
-          digitalWrite(blueLED, HIGH);
-        }
-        else 
-        {
-          digitalWrite(redLED, LOW);
-          digitalWrite(blueLED, LOW);
-          digitalWrite(greenLED, HIGH);
-        }
-
-      if (pulseSensor.sawStartOfBeat()) {
-        pulseSensor.outputBeat(); 
-      }
-    }
-  }
-
+  srituhobby.setTextColor(SSD1306_WHITE);
+  delay(10); 
+  counter3++;
   Svalue = analogRead(sensor);
   value = map(Svalue, 0, 1024, 0, 45);
 
+  if (counter3 >= 3) {
+  BPM();
+  counter3 = 0;
+  }
   int y = 60 - value;
 
   if (x > 128) {
@@ -268,39 +282,104 @@ void loop() {
     sX = 0;
     srituhobby.clearDisplay();
   }
-
   srituhobby.drawLine(sX, sY, x, y, WHITE);
   sX = x;
   sY = y;
   x ++;
+    if (counter == 0) {
+        int gsrPL = analogRead(A0);
+        if (myBPM > 0 && gsrPL > 0) {
+        Serial.print("BPM: ");                        // Print phrase "BPM: " 
+        Serial.println(myBPM); 
+        allbpm = myBPM + allbpm;
 
-  BPM();
+        counter2++;
+        Serial.println(counter2);
+
+        Serial.print("GSR: ");
+        Serial.println(gsrPL);
+        allgsr = gsrPL + allgsr;
+    }
+    averageBPM = allbpm/counter2;
+    averageGSR = allgsr/counter2;
+    Serial.print("ALL GSR: ");
+    Serial.println(allgsr);
+  Serial.print("average BPM so far: ");
+  Serial.println(averageBPM);
+  Serial.print("Average GSR so far: ");
+  Serial.println(averageGSR);
 
   srituhobby.setCursor(0, 0);
   srituhobby.setTextSize(2);
   srituhobby.setTextColor(SSD1306_WHITE);
+  srituhobby.println("Calibrate");
+  srituhobby.display();
+
+    }
+
+  else if (counter == 1) {
+    Serial.print("AVERAGE BPM: ");
+    Serial.println(averageBPM);
+    Serial.print("AVERAGE GSR: ");
+    Serial.println(averageGSR);
+    srituhobby.clearDisplay();
+      counter = 2;
+  }
+  if (counter2 > 51 && counter == 0) {
+    counter = 1;
+  }
+
+        if (counter == 2) {
+        int gsrPL = analogRead(A0);
+        Serial.print("GSR: ");
+        Serial.println(gsrPL);
+        Serial.print("BPM: ");
+        Serial.println(myBPM);
+        if (gsrPL > averageGSR + 50 && myBPM > averageBPM + 15) 
+        {
+          digitalWrite(greenLED, LOW);
+          digitalWrite(blueLED, LOW);
+          digitalWrite(redLED, HIGH);
+        }
+        else if (gsrPL > averageGSR && myBPM > averageBPM)
+        {
+          digitalWrite(redLED, LOW);
+          digitalWrite(greenLED, LOW);
+          digitalWrite(blueLED, HIGH);
+        }
+        else if (gsrPL < averageGSR - 20 && myBPM < averageBPM - 5)
+        {
+          digitalWrite(blueLED, LOW);
+          digitalWrite(redLED, LOW);
+          digitalWrite(greenLED, HIGH);
+        }
+
+
+
+  srituhobby.setCursor(60, 0);
+  srituhobby.setTextSize(2);
+  srituhobby.setTextColor(SSD1306_WHITE);
+  srituhobby.print(myBPM);
+  srituhobby.print("   ");
+
+  srituhobby.setCursor(0, 0);
   srituhobby.print("BPM :");
   srituhobby.display();
+
+
+      }
 }
 
 void BPM() {
-
-  if (Svalue > Highpulse) {
-    Stime = millis() - Ltime;
+  Stime = millis() - Ltime;
+  if (value > Highpulse) {
     count++;
-
-    if (Stime / 100 >= 60) {
+  }
+    if (Stime / 1000 >= 6) {
+      myBPM = count * 10;
       Ltime = millis();
-//      Serial.println(count);
-      srituhobby.setCursor(60, 0);
-      srituhobby.setTextSize(2);
-      srituhobby.setTextColor(SSD1306_WHITE);
-      srituhobby.print(count);
-      srituhobby.print("   ");
-      srituhobby.display();
       count = 0;
     }
-  }
 }
 ```
 <!--
