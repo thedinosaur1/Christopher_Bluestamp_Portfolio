@@ -8,8 +8,7 @@ Have you ever wanted to find out if your sibiling(s) are lying about eating all 
 <img src="Christopher-Headshot.png"  width="225" height="300">
 
 
-<!--# Final Milestone
-For your final milestone, explain the outcome of your project. Key details to include are:
+<!--# Final Milestone - Algorithm
 #### What I've Accomplished Since My Previous Milestone
 I added a algorithm to find my average heart beat and galvanic skin response. I also added a 3d printed box to hold lie detector in. 
 
@@ -19,15 +18,15 @@ One of my biggest challenges I faced was when I finnished with my lie detector, 
 #### My Biggest Triumphs At BSE
 I feel like my biggest triumph at BSE was coding my algorithm. When I first started making my algorithm, I had no idea what to do and how to find my average heart rate and average galvanic skin response. I eventually asked for help and got two codes, one for my algorithm and one for my default code. From then on, I combined both of the codes together and I had my final code. I still had to spend some days changing some things because some things didn't work but I finnished it in the end. 
 
-#### key topics you learned about
+#### key Topics You Learned About
 I learned a lot about engineering. I learned how to code with arduino, I learned how to do the basics of 3d printing, I learned the basics of Ohm's law, and I learned how to solder. 
 
-- What you hope to learn in the future after everything you've learned at BSE
-
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+#### What You Hope To Learn In The Future After Everything You've Learned At BSE
+I would love to learn more about coding and CADing. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 -->
+
 # Second Milestone - Heartbeat Sensor
 The heartbeat sensor can detect your heartbeat.  
 
@@ -87,45 +86,6 @@ Link: https://cad.onshape.com/documents/3ba0a5e8628ea6f2311e0273/w/f3892129fdbb3
 # Code
 
 ```c++
-/*
-   Sketch to handle each sample read from a PulseSensor.
-   Typically used when you don't want to use interrupts
-   to read PulseSensor voltages.
-
-   Here is a link to the tutorial that discusses this code
-   https://pulsesensor.com/pages/getting-advanced
-
-   Copyright World Famous Electronics LLC - see LICENSE
-   Contributors:
-     Joel Murphy, https://pulsesensor.com
-     Yury Gitman, https://pulsesensor.com
-     Bradford Needham, @bneedhamia, https://bluepapertech.com
-
-   Licensed under the MIT License, a copy of which
-   should have been included with this software.
-
-   This software is not intended for medical use.
-*/
-
-/*
-   Every Sketch that uses the PulseSensor Playground must
-   define USE_ARDUINO_INTERRUPTS before including PulseSensorPlayground.h.
-   Here, #define USE_ARDUINO_INTERRUPTS false tells the library to
-   not use interrupts to read data from the PulseSensor.
-
-   If you want to use interrupts, simply change the line below
-   to read:
-     #define USE_ARDUINO_INTERRUPTS true
-
-   Set US_PS_INTERRUPTS to false if either
-   1) Your Arduino platform's interrupts aren't yet supported
-   by PulseSensor Playground, or
-   2) You don't wish to use interrupts because of the side effects.
-
-   NOTE: if US_PS_INTERRUPTS is false, your Sketch must
-   call pulse.sawNewSample() at least once every 2 milliseconds
-   to accurately read the PulseSensor signal.
-*/
 #define USE_ARDUINO_INTERRUPTS false
 #include <PulseSensorPlayground.h>
 #include <SPI.h>
@@ -137,38 +97,9 @@ Adafruit_SSD1306 srituhobby = Adafruit_SSD1306(128, 64, &Wire);
 
 #define sensor A1
 #define Highpulse 35
-/*
-   The format of our output.
 
-   Set this to PROCESSING_VISUALIZER if you're going to run
-    the Processing Visualizer Sketch.
-    See https://github.com/WorldFamousElectronics/PulseSensor_Amped_Processing_Visualizer
-
-   Set this to SERIAL_PLOTTER if you're going to run
-    the Arduino IDE's Serial Plotter.
-*/
 const int OUTPUT_TYPE = SERIAL_PLOTTER;
 
-/*
-   Pinout:
-     PULSE_INPUT = Analog Input. Connected to the pulse sensor
-      purple (signal) wire.
-     PULSE_BLINK = digital Output. Connected to an LED (and 1K series resistor)
-      that will flash on each detected pulse.
-     PULSE_FADE = digital Output. PWM pin onnected to an LED (and 1K series resistor)
-      that will smoothly fade with each pulse.
-      NOTE: PULSE_FADE must be a pin that supports PWM. Do not use
-      pin 9 or 10, because those pins' PWM interferes with the sample timer.
-     THRESHOLD should be set higher than the PulseSensor signal idles
-      at when there is nothing touching it. The expected idle value
-      should be 512, which is 1/2 of the ADC range. To check the idle value
-      open a serial monitor and make note of the PulseSensor signal values
-      with nothing touching the sensor. THRESHOLD should be a value higher
-      than the range of idle noise by 25 to 50 or so. When the library
-      is finding heartbeats, the value is adjusted based on the pulse signal
-      waveform. THRESHOLD sets the default when there is no pulse present.
-      Adjust as neccesary.
-*/
 
 int sX = 0;
 int sY = 60;
@@ -196,34 +127,15 @@ int averageBPM = 0;
 int averageGSR = 0;
 int myBPM1;
 int myBPM;
-/*
-   samplesUntilReport = the number of samples remaining to read
-   until we want to report a sample over the serial connection.
 
-   We want to report a sample value over the serial port
-   only once every 20 milliseconds (10 samples) to avoid
-   doing Serial output faster than the Arduino can send.
-*/
 byte samplesUntilReport;
 const byte SAMPLES_PER_SERIAL_SAMPLE = 5;
 
-/*
-   All the PulseSensor Playground functions.
-*/
 PulseSensorPlayground pulseSensor;
 
 void setup() {
-  /*
-     Use 115200 baud because that's what the Processing Sketch expects to read,
-     and because that speed provides about 11 bytes per millisecond.
-
-     If we used a slower baud rate, we'd likely write bytes faster than
-     they can be transmitted, which would mess up the timing
-     of readSensor() calls, which would make the pulse measurement
-     not work properly.
-  */
   Serial.begin(9600);
-  //initializes my lcd 
+  //initializes lcd 
   srituhobby.begin(SSD1306_SWITCHCAPVCC, 0x3C);// Address 0x3C for 128x32
   delay(1000);
   srituhobby.clearDisplay();//removes everything on the lcd
@@ -241,6 +153,7 @@ void setup() {
   digitalWrite(redLED, HIGH);
   delay(500);
   digitalWrite(redLED, LOW);
+
   // Configure the PulseSensor manager.
   pulseSensor.analogInput(PULSE_INPUT);
   pulseSensor.blinkOnPulse(PULSE_BLINK);
@@ -256,13 +169,7 @@ void setup() {
 
   // Now that everything is ready, start reading the PulseSensor signal.
   if (!pulseSensor.begin()) {
-    /*
-       PulseSensor initialization failed,
-       likely because our Arduino platform interrupts
-       aren't supported yet.
 
-       If your Sketch hangs here, try changing USE_PS_INTERRUPT to false.
-    */
     for(;;) {
       // Flash the led to show things didn't work.
       digitalWrite(PULSE_BLINK, LOW);
@@ -374,9 +281,7 @@ void loop() {
   srituhobby.setCursor(0, 0);
   srituhobby.print("BPM :");
   srituhobby.display();
-
-
-      }
+  }
 }
 
 void BPM() {
