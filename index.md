@@ -8,7 +8,7 @@ Have you ever wanted to find out if your sibiling(s) are lying about eating all 
 <img src="Christopher-Headshot.png"  width="225" height="300">
 
 
-<!--# Final Milestone - Algorithm
+# Final Milestone - Algorithm
 #### What I've Accomplished Since My Previous Milestone
 I added a algorithm to find my average heart beat and galvanic skin response. I also added a 3d printed box to hold lie detector in. 
 
@@ -24,8 +24,7 @@ I learned a lot about engineering. I learned how to code with arduino, I learned
 #### What You Hope To Learn In The Future After Everything You've Learned At BSE
 I would love to learn more about coding and CADing. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
--->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KSXoCxLHSVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # Second Milestone - Heartbeat Sensor
 The heartbeat sensor can detect your heartbeat.  
