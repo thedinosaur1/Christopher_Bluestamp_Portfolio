@@ -99,7 +99,6 @@ Adafruit_SSD1306 srituhobby = Adafruit_SSD1306(128, 64, &Wire);
 
 const int OUTPUT_TYPE = SERIAL_PLOTTER;
 
-
 int sX = 0;
 int sY = 60;
 int x = 0;
@@ -139,7 +138,6 @@ void setup() {
   delay(1000);
   srituhobby.clearDisplay();//removes everything on the lcd
 
-  //initializing LED pins
   pinMode(greenLED, OUTPUT);
   pinMode(blueLED, OUTPUT);
   pinMode(redLED, OUTPUT);
@@ -153,7 +151,6 @@ void setup() {
   delay(500);
   digitalWrite(redLED, LOW);
 
-  // Configure the PulseSensor manager.
   pulseSensor.analogInput(PULSE_INPUT);
   pulseSensor.blinkOnPulse(PULSE_BLINK);
   pulseSensor.fadeOnPulse(PULSE_FADE);
@@ -162,11 +159,9 @@ void setup() {
   pulseSensor.setOutputType(OUTPUT_TYPE);
   pulseSensor.setThreshold(THRESHOLD);
 
-  // Skip the first SAMPLES_PER_SERIAL_SAMPLE in the loop().
   samplesUntilReport = SAMPLES_PER_SERIAL_SAMPLE;
   counter = 0;
 
-  // Now that everything is ready, start reading the PulseSensor signal.
   if (!pulseSensor.begin()) {
 
     for(;;) {
@@ -229,7 +224,6 @@ void loop() {
   srituhobby.setTextColor(SSD1306_WHITE);
   srituhobby.println("Calibrate");
   srituhobby.display();
-
     }
 
   else if (counter == 1) {
@@ -268,8 +262,6 @@ void loop() {
           digitalWrite(redLED, LOW);
           digitalWrite(greenLED, HIGH);
         }
-
-
 
   srituhobby.setCursor(60, 0);
   srituhobby.setTextSize(2);
