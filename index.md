@@ -297,6 +297,7 @@ void BPM() {
 }
 ```
 <!--
+
 # Bill of Materials
 Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
 Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
@@ -305,9 +306,11 @@ Don't forget to place the link of where to buy each component inside the quotati
 |:--:|:--:|:--:|:--:|
 | Heartbeat Sensor | Finding your heart beat | $24.99 | <a href="https://pulsesensor.com/products/pulse-sensor-amped"> Link </a> |
 |:--:|:--:|:--:|:--:|
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Reynolds Wraps| lie detector| $2.99 | <a href="[[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://store.arduino.cc/products/arduino-nano-every?selectedStore)](https://www.amazon.com/Reynolds-Wrap-Aluminum-Foil-30/dp/B005GPJCHQ/ref=asc_df_B005GPJCHQ/?tag=hyprod-20&linkCode=df0&hvadid=385286500718&hvpos=&hvnetw=g&hvrand=11536057204935147244&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9032171&hvtargid=pla-852088813362&psc=1&tag=&ref=&adgrpid=84171693088&hvpone=&hvptwo=&hvadid=385286500718&hvpos=&hvnetw=g&hvrand=11536057204935147244&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9032171&hvtargid=pla-852088813362)"> Link </a> |
 |:--:|:--:|:--:|:--:|
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Arduino nano every | microcontroller | $13.70 | <a href="[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://store.arduino.cc/products/arduino-nano-every?selectedStore)"> Link </a> |
+|:--:|:--:|:--:|:--:|
+| Velcro roll | wrap around my fingers | $1.28 | <a href="[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://www.temu.com/subject/n9/googleshopping-landingpage-a-psurl.html?goods_id=601099512767485&_bg_fs=1&_p_rfs=1&_x_ads_channel=google&_x_ads_sub_channel=shopping&_x_login_type=Google&_x_vst_scene=adg&sku_id=17592195089000&_x_ns_sku_id=17592195089000&_x_gmc_account=647900107&_x_ads_account=5532219654&_x_ads_set=20136091185&_x_ads_id=149667122632&_x_ads_creative_id=658692263180&_x_ns_source=g&_x_ns_gclid=EAIaIQobChMI7LLOp6yegAMVmAKtBh15HQmzEAQYAyABEgI3QvD_BwE&_x_ns_placement=&_x_ns_match_type=&_x_ns_ad_position=&_x_ns_product_id=17592195089000&_x_ns_target=&_x_ns_devicemodel=&_x_ns_wbraid=CjkKCQjwk96lBhDtARIoAPn4tNsZ-lR1NcT5h4edKiqgLrOvyTd20jrIU-YNwHMANHGoKOBDMxoCwBg&_x_ns_gbraid=0AAAAAo4mICHg-ljQogm8ubgM85fntmt_j&_x_ns_targetid=pla-1648203319892&gclid=EAIaIQobChMI7LLOp6yegAMVmAKtBh15HQmzEAQYAyABEgI3QvD_BwE&adg_ctx=f-ce0e671f)"> Link </a> |
 |:--:|:--:|:--:|:--:|
 -->
 
