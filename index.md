@@ -11,23 +11,24 @@ Have you ever wanted to find out if your sibling(s) are lying about eating all t
 
 # Final Milestone - Algorithm
 
-## Summary
-#### Explanation of milestone
+## ==Summary==: 
+
+#### Explanation of milestone:
 I made a box and an algorithm for my Lie Detector. 
 
-#### Components used
+#### Components used:
 I used ONshape to design a box for my Lie Detector. 
 
-#### How the components work together
+#### How the components work together:
 My box holds all my components together and makes it look better. Also my algorithm finds my average heart beat and galvanic skin response and replaces my average BPM and GSR in my code with the new average. 
 
-## Progress
+## Progress:
 I just finished coding my algorithm to find my average BPM and GSR before I run my lie detector and I designed a box on ONshape to hold all my components together. 
 
-## Challenges faced
+## Challenges faced:
 I have three main issues when making my third milestone. The first issue is my heartbeat sensor's wire broke, so I tried to resolder the wires back onto my heartbeat sensor, however since my heartbeat sensor is really small, and i'm really clumsy, I accidently burnt off some of the other parts on my heartbeat sensor, so I had to get a new one and it worked. My second issue is stuffing all my wires into my box because my box is really small and I had to shorten some wires and break some wires, but I eventually solved the problem. My third issue is needing to combine my algorithm code to my lie detector code, since I had to separate codes. It took a long time to combine the codes but I eventually got it. 
 
-## Next Steps
+## Next Steps:
 If I had more time, I would add a blood pressure sensor. And I could also add a system that deletes my previous BPM display because currently sometimes I get a new heartbeat too fast and it displays right over my previous heart beat and it looks really messy. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hQsp0eu9h-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
