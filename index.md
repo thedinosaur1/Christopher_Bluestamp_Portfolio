@@ -304,6 +304,9 @@ Here is my code for the intensive project:
             }
         }
         </pre>
+
+<br>
+
 # Bill of Materials
 
 | **Part** | **Note** | **Price** | **Link** |
