@@ -6,7 +6,7 @@ Have you ever wanted to find out if your sibiling(s) are lying about eating all 
 | Christopher Y.| Lynbrook High | Mechanical Engineering | Incoming Freshman
 
 <img src="Christopher-Headshot.png"  width="225" height="300">
-
+<img src="Christopher-Project.png" width ="225" height="300">
 
 # Final Milestone - Algorithm
 #### What I've Accomplished Since My Previous Milestone
@@ -297,5 +297,3 @@ void BPM() {
 | Reynolds Wraps| Lie Detector| $2.99 | <a href="https://www.amazon.com/Reynolds-Wrap-Aluminum-Foil-30/dp/B005GPJCHQ"> Link </a> |
 | Arduino Bano Every | Microcontroller | $13.70 | <a href="https://store.arduino.cc/products/arduino-nano-every?selectedStore=eu"> Link </a> |
 | Velcro Roll | Wrap Around My Fingers | $1.28 | <a href="https://www.amazon.com/ELEYY-164ft-Hook-Cable-Straps/dp/B09BFWT1MW"> Link </a> |
-
-<img src="Christopher-Project.png" width ="225" height="300">
