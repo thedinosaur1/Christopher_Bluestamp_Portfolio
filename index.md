@@ -95,7 +95,9 @@ I am planning on making a lie detector.
 
 This is my CAD design link: [Link](https://cad.onshape.com/documents/3ba0a5e8628ea6f2311e0273/w/f3892129fdbb3340f6cfe332/e/1157ac02c916d4a12a24daf8)
 
-<!-- # Schematics -->
+# Schematics 
+Here is a picuture of my schematics: 
+<img src="Screenshot 2023-07-21 123633.png"  width="225" height="300">
 
 # Code
 
