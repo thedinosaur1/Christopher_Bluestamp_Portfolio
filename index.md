@@ -97,7 +97,8 @@ This is my CAD design link: [Link](https://cad.onshape.com/documents/3ba0a5e8628
 
 # Schematics 
 Here is a picuture of my schematics: 
-<img src="Screenshot 2023-07-21 123633.png"  width="225" height="300">
+
+<img src="Screenshot 2023-07-21 123633.png"  width="700" height="300">
 
 # Code
 
