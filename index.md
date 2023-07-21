@@ -7,20 +7,16 @@ Have you ever wanted to find out if your sibling(s) are lying about eating all t
 
 <img src="Christopher-Headshot.png"  width="225" height="300"> <img src="Christopher-Project.png" width ="225" height="300">
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KSXoCxLHSVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # Final Milestone - Algorithm
 
-## Summary: 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KSXoCxLHSVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-#### Explanation of milestone:
-I made a box and an algorithm for my Lie Detector. 
+## Summary: 
+I made a box and an algorithm for my Lie Detector. My algorithm calcutlate the users average heart rate and galvanic skin response, then puts those numbers into the average for my lie detector code. My box holds all my components together and makes it look better. Also my algorithm finds my average heart beat and galvanic skin response and replaces my average BPM and GSR in my code with the new average. 
 
 #### Components used:
 I used ONshape to design a box for my Lie Detector. 
-
-#### How the components work together:
-My box holds all my components together and makes it look better. Also my algorithm finds my average heart beat and galvanic skin response and replaces my average BPM and GSR in my code with the new average. 
 
 ## Progress:
 I just finished coding my algorithm to find my average BPM and GSR before I run my lie detector and I designed a box on ONshape to hold all my components together. 
@@ -31,20 +27,16 @@ I have three main issues when making my third milestone. The first issue is my h
 ## Next Steps:
 If I had more time, I would add a blood pressure sensor. And I could also add a system that deletes my previous BPM display because currently sometimes I get a new heartbeat too fast and it displays right over my previous heart beat and it looks really messy. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hQsp0eu9h-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # Second Milestone - Heartbeat Sensor
 
-## Summary:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hQsp0eu9h-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-#### Explanation:
-I made a heartbeat sensor which can find your heartbeat. 
+## Summary:
+I made a heartbeat sensor which can find your heartbeat by shinning a green light onto your finger and reflecting it back onto a photosensor and finds the amount of blood in my finger. My pulsesensor gets my heart beat and gives the information on when my heart beats and my average BPM to my OLED screen. Then my OLED screen displays my heart beat and displays a chart that shows when my heart beats. 
 
 #### Components used:
 I added a pulsesensor and an OLED screen. 
-
-#### How the components work together:
-My pulsesensor gets my heart beat and gives the information on when my heart beats and my average BPM to my OLED screen. Then my OLED screen displays my heart beat and displays a chart that shows when my heart beats. 
 
 ## Progress:
 I am fully done with the important parts of my lie detector that can see if someones lying. 
@@ -55,20 +47,15 @@ I faced two main challenges, which are needing to combine two codes together and
 ## Next Steps:
 I want to make a box around my lie detector so it looks more professional and I would also like to add a basic algorithm that changes depending on if the person im testing sweats a lot, has a high resting heart beat or gets nervous easily.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/StfrcpoQP14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 # First Milestone - Lie Detector
 
-## Summary:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/StfrcpoQP14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-#### Explanation of my milestone:
-I made a Lie Detector which is an arduino based project that can tell if you are telling the truth or lying. 
+## Summary:
+I made a Lie Detector which is an arduino based project that can tell if you are telling the truth or lying by using the persons galvanic skin response which is the bodies electricity conductivity. The arduino is a board that gives instructions to all the other parts in the system using the code I put into the app. The wires connect the parts of the arduino to other places like the resistors or the columns. The resistors limit the electricity into the LED lights, so they don't die. And the breadboard connects the rows and columns together. 
 
 #### Components used:
 The arduino is a board that has code from a computer and physical bits that you can connect wires to. The breadboard connects columns together and connects rows together. There are four resistors, three of them are 2.2k and one of them is 10k, resistors limit the amount of electricity that travels through. The LED's light up when coded to through a device, LED lights work by having electricity flow through a microchip which illuminates a light. The wires just connect everything together. In summary, I used an arduino, a breadboard, four resistors, and three LEDS. 
-
-#### How the components work together:
-The arduino is a board that gives instructions to all the other parts in the system using the code I put into the app. The wires connect the parts of the arduino to other places like the resistors or the columns. The resistors limit the electricity into the LED lights, so they don't die. And the breadboard connects the rows and columns together. 
 
 ## Progress:
 I just finished my lie detector that can detect if someones lying
@@ -111,7 +98,7 @@ This is my CAD design link: [Link](https://cad.onshape.com/documents/3ba0a5e8628
 
 # Code
 
-```c++
+<pre style="background:#fdfdfd: border:none; height:40pc">
 #define USE_ARDUINO_INTERRUPTS false
 #include <PulseSensorPlayground.h>
 #include <SPI.h>
@@ -313,7 +300,7 @@ void BPM() {
       count = 0;
     }
 }
-```
+</pre>
 
 
 # Bill of Materials
