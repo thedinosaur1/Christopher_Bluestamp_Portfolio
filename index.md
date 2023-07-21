@@ -99,7 +99,9 @@ This is my CAD design link: [Link](https://cad.onshape.com/documents/3ba0a5e8628
 
 # Code
 
-<pre style="background:#fdfdfd; border:none; height:40pc">
+Here is my code for the intensive project
+
+<pre style="background: #fdfdfd; border:none; height:40pc">
 
      #define USE_ARDUINO_INTERRUPTS false
      #include <PulseSensorPlayground.h>
