@@ -1,4 +1,4 @@
-# Lie detector
+# Lie detector🤥
 Have you ever wanted to find out if your sibling(s) are lying about eating all the snacks in the house? Then wonder no further! With this new technology, you can find out if the cookie monster or your sibling(s) ate all the snacks in the house! By measuring galvanic skin response and heart rate, we can find out if someone is lying to you. (most of the time)
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
