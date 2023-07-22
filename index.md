@@ -107,7 +107,7 @@ Here is a picuture of my schematics:
 |:--:|:--:|:--:|:--:|
 | Heartbeat Sensor | Finding Your Heart Beat | $24.99 | <a href="https://pulsesensor.com/products/pulse-sensor-amped"> Link </a> |
 | Reynolds Wraps| Lie Detector| $2.99 | <a href="https://www.amazon.com/Reynolds-Wrap-Aluminum-Foil-30/dp/B005GPJCHQ"> Link </a> |
-| Arduino Bano Every | Microcontroller | $13.70 | <a href="https://store.arduino.cc/products/arduino-nano-every?selectedStore=eu"> Link </a> |
+| Arduino Nano Every | Microcontroller | $13.70 | <a href="https://store.arduino.cc/products/arduino-nano-every?selectedStore=eu"> Link </a> |
 | Velcro Roll | Wrap Around My Fingers | $1.28 | <a href="https://www.amazon.com/ELEYY-164ft-Hook-Cable-Straps/dp/B09BFWT1MW"> Link </a> |
 
 
